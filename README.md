@@ -17,4 +17,3 @@ Sublime Text -> Preferences -> Package Settings -> img-placeholder
 * `width` - width
 * `height` - height
 * ...
-
