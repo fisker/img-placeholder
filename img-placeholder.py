@@ -13,7 +13,7 @@ def init_settings():
 
 def get_settings():
     settings = sublime.load_settings('img-placeholder.sublime-settings')
-    domains = settings.get('domains')
+    domains = settings.get('domains', [])
     protocol = settings.get('protocol', 'http:')
     width = str(settings.get('width', 600))
     height = str(settings.get('height', 300))
