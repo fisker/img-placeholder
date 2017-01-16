@@ -1,6 +1,6 @@
 img-placeholder
 -------------
-imager placeholders completions for html, css and markdown
+image placeholders completions for html, css and markdown
 
 ##### support
 support html tag attibute
