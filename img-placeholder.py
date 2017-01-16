@@ -68,7 +68,7 @@ def is_trigger(text, syntax):
 
     for s in (u'markdown', u'multimarkdown'):
         if syntax.find(s):
-            search = re.search(r"(?:(?:^|\s))\!\[.?\]\(?$", text)
+            search = re.search(r"(?:(?:^|\s))\!\[.*?\]\(?$", text)
             if (search):
                 return True
 
