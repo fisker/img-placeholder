@@ -1,14 +1,23 @@
 img-placeholder
 -------------
-imager placeholders completions for html, css
+imager placeholders completions for html, css and markdown
 
 ##### support
 support html tag attibute
-src, srcset, poster
-
+```html
+src=""
+srcset=""
+poster=""
+```
 support css value
+```css
   url()
+```
 
+support markdown value
+```md
+  ![Alt Text](url)
+```
 ##### config
 
 Sublime Text -> Preferences -> Package Settings -> img-placeholder

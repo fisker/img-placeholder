@@ -53,15 +53,22 @@ def get_before_text(view):
 
 def is_trigger(text, syntax):
     text = text.lower()
+    syntax = syntax.lower()
 
-    if syntax.lower().find(u'html'):
+    if syntax.find(u'html'):
         search = re.search(r"(?:(?:^|\s))(?:src|poster|srcset)=[\"\']?$", text)
         if (search):
             return True
 
     for s in (u'html', u'css', u'less', u'sass', u'scss', u'stylus'):
-        if syntax.lower().find(s):
+        if syntax.find(s):
             search = re.search(r"(?:(?:^|\s))url\([\"\']?$", text)
+            if (search):
+                return True
+
+    for s in (u'markdown', u'multimarkdown'):
+        if syntax.find(s):
+            search = re.search(r"(?:(?:^|\s))\!\[(.*?)\]\(?$", text)
             if (search):
                 return True
 
