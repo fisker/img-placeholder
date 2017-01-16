@@ -15,7 +15,7 @@ support css value
 ```
 
 support markdown value
-```md
+```
   ![Alt Text](url)
 ```
 ##### config
